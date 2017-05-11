@@ -1,0 +1,10 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, gagarin55
+---
+
+* (Geth) refactored to support custom blockchains (that allows us to easily add new Monetary Policy)
+* (Emerald) Improved key generation
+* (Emerald) Address Book
+* (SputnikVM) Working on confirming all official tests for EVM

@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, gagarin55
+---
+
+* (+2) two new developers joined our team, _Wei Tang_ @sorpaas and _Isaac Ardis_ @ia
+* (Emerald) Signing transactions
+* (Emerald) New key generation
+* (Emerald) Gas estimation
+* (Emerald) Contract creation
+* (Emerald) Ability to run as desktop app
+* (SputnikVM) Most of operations are implemented now

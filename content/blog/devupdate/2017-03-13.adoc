@@ -1,0 +1,17 @@
+---
+layout: weekly
+published: true
+---
+
+* (Geth) improve automatic builds process, everything is deployed to http://bintray[bintray now]
+* (Geth) new versioning process, based on `git describe --tags`
+  ** geth-classic-linux-v3.3.0-1-gdd95f05.zip
+  ** `v.3.3.0` - Geth version
+  ** `1` - commits count after tag creation
+  ** `gdd95f05` - commit id `dd95f05`
+* (Geth) improved debugging service
+* (Geth) *NEW RELEASE*
+  ** version 3.3.0 https://github.com/ethereumproject/go-ethereum/releases/tag/v3.3.0
+  ** cleanup & refactoring version
+  ** *please download and test it*, _many_ things were changed since 3.2.x
+* (Emerald Wallet) working implementation of RPC Connector

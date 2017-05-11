@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, sorpaas, whilei, r8d8
+---
+
+* (Emerald) Transfer and approve tokens from same interface
+* (Emerald) Fully working transactions, with status update
+* (Emerald) Basic support for arbitrary contracts
+* (Emerald) Keystore read/store implementation
+* (Emerald) Paths configuration
+* (SputnikVM) New testing infrastructure
+* (SputnikVM) Implementation for most basic Operations

@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+---
+
+* (Geth) migrate from private Teamcity CI to public builds
+  ** Windows builds and tests with Appveyor (turns out there're some issues with windows)
+  ** automatic uploads to Bintray
+* (Geth) Migrate chain config
+* (Geth) logging normalization
+* (Geth) JIT VM dropped (we're working on replacement VM)
+* (Geth) improved metrics stat
+* (Emerald Wallet) Initial code for backend, rust based

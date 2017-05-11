@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+${include 'head.html'}
+<body class="horizontal">
+${include 'header.html'}
+<section>
+    <div class="container page-header">
+        <div class="row">
+            <h2 class="heading">${page.title}</h2>
+            <div class="headul"></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container text">
+        <div class="row">
+            <div class="col-xs-12">
+                ${content}
+            </div>
+        </div>
+    </div>
+</section>
+${include 'footer.html'}
+</body>
+</html>

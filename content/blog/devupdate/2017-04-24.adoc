@@ -1,0 +1,15 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, gagarin55
+---
+
+* (+1) one more developer joined the team, _Constantine Kryvomaz_ @bunda
+* (SputnikVM) Further improvements of command execution
+* (SputnikVM) Support for storage, blockchain and other externals
+* (SputnikVM) Initial support for integration SputnikVM through FFI (Foreign Function Interface)
+* (SputnikVM) Smart Contract execution debugger
+* (Emerald) Huge refactoring after initial version of Connector
+* (Emerald) Faster and more secure RPC through Electron
+* (Emerald) Improved Gas Estimation
+* (Emerald) Initial code for Address Book

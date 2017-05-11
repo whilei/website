@@ -1,0 +1,46 @@
+---
+layout: page
+title: Blog
+published: true
+---
+
+<section class="blog">
+    <div class="container text">
+        <div class="row">
+            <h1>Articles</h1>
+            <%
+            site.pages
+            .findAll { it.layout == 'article' }
+            .sort { it.date }
+            .reverse()
+            .each { post ->
+            %>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+                <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
+                <p>${post.description}</p>
+            </div>
+            <%
+            }
+            %>
+        </div>
+
+        <div class="row">
+            <h1>Development Updates</h1>
+            <%
+            site.pages
+            .findAll { it.layout == 'weekly' }
+            .sort { it.date }
+            .reverse()
+            .take(10)
+            .each { post ->
+            %>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+                <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
+                <p>${post.description}</p>
+            </div>
+            <%
+            }
+            %>
+        </div>
+    </div>
+</section>

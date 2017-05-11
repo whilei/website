@@ -1,0 +1,333 @@
+$green-orig: #00c853;
+$green-etc: #128f76;
+$green: darken(#00c853, 0%);
+
+.footer {
+  a:hover {
+    color: white;
+  }
+}
+
+.donation {
+  //text-align: center;
+
+  h3 {
+    color: $green;
+  }
+
+  h4.addr {
+    font-size: 14px;
+  }
+
+  p.qr {
+    table {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+
+
+.jobs {
+  .job {
+    h2 {
+      color: $green;
+      height: 60px;
+      text-align: center;
+    }
+  }
+}
+
+p {
+  text-align: justify;
+}
+
+.roadmap {
+  .calendar {
+    h2, h3, h4 {
+      color: $green;
+      display: inline;
+    }
+  }
+
+  small {
+    color: #aaa;
+  }
+}
+
+.container.page-header {
+  padding: 100px 15px 0 15px;
+}
+
+section .container {
+  padding: 10px 15px 125px 15px;
+}
+
+.personal-contact {
+  padding-top: 50px;
+}
+
+.contact-person {
+  margin-bottom: 75px;
+  display: inline-block;
+  width: 100%;
+
+  .pic, .info {
+    float: left;
+  }
+
+  .pic img {
+    float: right;
+  }
+
+  .info {
+    color: #333333;
+
+    h4 {
+      //color: #ffffff;
+    }
+
+    .post {
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    div {
+      white-space: nowrap;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a i {
+      color: $green;
+      font-size: 15px;
+      margin-right: 10px;
+    }
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .contact-person {
+    margin-top: 75px;
+    margin-bottom: 0px;
+  }
+  .contact-person .pic {
+    padding-left: 0px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-person {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .contact-person .pic {
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+  .contact-person .info h4{
+    margin-bottom: 5px;
+  }
+  .contact-person .info .post{
+    margin-bottom: 5px;
+  }
+
+  .contact-person .info div{
+    font-size: 14px;
+  }
+}
+
+/*---------------------------------
+    Our Team
+-----------------------------------*/
+
+.member {
+  .pic {
+    position: relative;
+  }
+
+  .pic img {
+    width: 100%;
+    //height: 355px;
+    position: relative;
+  }
+
+  .pic .social {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 70px;
+    background-color: $green;
+    height: 30px;
+  }
+
+  .pic .social:before {
+    display: block;
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background-color: $green;
+    position: absolute;
+    left: -15px;
+    -moz-transform: skewX(30deg);
+    -o-transform: skewX(30deg);
+    transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    -webkit-transform: skewX(30deg);
+    z-index: 1;
+    top: 0px;
+  }
+
+  .pic .social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 2px 2px 2px 0;
+    float: right;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .pic .social a i {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .info h3 {
+    margin: 25px 0 25px 0;
+    text-transform: uppercase;
+    min-height: 75px;
+    font-size: 26px;
+  }
+
+  .info p {
+    margin-bottom: 0px;
+  }
+
+  .info h4:after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: $green;
+    margin: 22px auto 0 auto;
+  }
+  
+}
+
+.team4  {
+
+  .heading {
+    padding-bottom: 10px;
+  }
+
+  .member {
+    .pic img {
+      //height: 262px;
+    }
+  }
+}
+
+.team6 {
+  .info {
+    h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .member {
+    .info h3 {
+      font-size: 22px;
+    }
+  }
+
+  section.header .maintext .primary-text h1, section.header .maintext .black-text h1 {
+    font-size: 46px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .member {
+    margin-bottom: 50px;
+  }
+  .member:last-child {
+    margin-bottom: 0;
+  }
+
+  .team6 {
+    .info {
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (width:1024px) { //ipad landscape
+  .team6 {
+    .info {
+      h3 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .member {
+    margin-bottom: 50px;
+  }
+  .member:last-child {
+    margin-bottom: 0;
+  }
+
+  .team4 .member {
+    .pic img {
+      //height: 220px;
+    }
+  }
+
+}
+
+@media (min-width: 992px) {
+  .member {
+    margin-bottom: 0;
+  }
+
+  .team4 .member {
+    .pic img {
+      //height: 212px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .member {
+    margin-bottom: 0;
+  }
+
+  .team4 .member {
+    .pic img {
+      //height: 262px;
+    }
+  }
+
+}

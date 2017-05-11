@@ -1,0 +1,49 @@
+ETCDEV Team Website
+===================
+
+Structure
+---------
+
+* `SiteConfig.groovy` - configuration
+* `theme` - compiled site theme (UI design & elements)
+* `theme-src` - theme sources (`node build-theme.js`)
+* `content` - website content
+
+
+How to Use
+----------
+
+### Setup
+
+Install:
+
+ * nodejs & npm - https://nodejs.org/
+ * gradle - https://gradle.org/install
+
+### Prepare UI Theme
+
+----
+npm install
+node build-theme.js --no-watch
+----
+
+### Preview Website
+
+----
+gradle preview
+----
+
+Open: http://localhost:4000
+
+Edit content
+------------
+
+Look at `content` dir
+
+Copyrights & License
+--------------------
+
+Content of the directory `content` is licensed by CC BY 4.0
+
+Part of the work, located in directories `theme` and `theme-src`, is covered by different licenses/agreements
+and can't be copied or used outside original domain of that website.

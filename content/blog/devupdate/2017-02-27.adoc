@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+---
+
+* Geth code cleanup is finished
+  ** migrated to Vendoring
+  ** dead code drop (thousands lines of unused code)
+* New Integration Testing infrastructure, now works on BSD and macOS
+* Initial code for wallet sdk
+  ** named as Project Emerald
+  ** basic UI to see accounts, balances, send transaction, network status
+* Architecture design of a new EVM for Ethereum Classic (in progress)

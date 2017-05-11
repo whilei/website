@@ -1,0 +1,9 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, sorpaas, r8d8
+---
+
+* (Emerald) Support for Tokens
+* (Emerald) Automatic builds, with strict rules to code quality
+* (SputnikVM) Implementation for basic Operations

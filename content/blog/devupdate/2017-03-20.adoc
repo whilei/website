@@ -1,0 +1,10 @@
+---
+layout: weekly
+published: true
+contributors: elaineo
+---
+
+* (Geth) Improved blockchain downloader and peer discovery
+* (Geth) Initial refactor to externalize Chain configuration
+* (Emerald) New account generator
+* (SputnikVM) EVM Test suite

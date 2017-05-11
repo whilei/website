@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, gagarin55, tranvictor
+---
+
+
+* (Geth) New command line args to clean/rollback blockchain
+* (Geth) Improved logging
+* (Geth) Internal release for testing
+* (Emerald) Use Address Book for transactions
+* (Emerald) Install Smart Contracts, show basic details and interaction
+* (SputnikVM) Working on confirming all official tests for EVM

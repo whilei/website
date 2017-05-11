@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title><![CDATA[${site.title}]]></title>
+    <link href="${site.url}${page.url}" rel="self"/>
+    <link href="${site.url}/"/>
+    <updated>${xmlDateTime date: page.lastUpdated}</updated>
+    <id>${site.url}/</id>
+    <generator uri="http://sysgears.com/grain/">Grain</generator>
+
+    <% site.pages
+        .findAll { it.layout == 'article' || it.layout == 'weekly' }
+        .sort { it.date }
+        .reverse()
+        .take(20)
+        .each { post -> %>
+    <entry>
+        <title type="html"><![CDATA[${post.title}]]></title>
+        <link href="${site.url}${post.url}"/>
+        <updated>${xmlDateTime date: post.updated}</updated>
+        <id>${post.url}</id>
+        <summary><![CDATA[${post.brief}]]></summary>
+        <content type="html"><![CDATA[${post.render().content}]]></content>
+    </entry>
+    <% } %>
+</feed>

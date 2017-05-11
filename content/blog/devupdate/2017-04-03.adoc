@@ -1,0 +1,9 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, sorpaas, r8d8
+---
+
+* (SputnikVM) First experimental project was finished. Started with second implementation
+* (Emerald) Private key extraction
+* (Emerald) Support for tokens

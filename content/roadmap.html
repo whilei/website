@@ -1,0 +1,250 @@
+---
+layout: page
+title: Roadmap
+published: true
+---
+
+<section class='roadmap inviewport animated delay1' data-effect="fadeInLeft">
+    <div class="container">
+        <div class="row">
+            <h2 class="heading">General Roadmap</h2>
+            <p class="subheading">ETCDEV Team plans for 2017-2019, all protocol related
+                details will be discussed with community</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3>Goals</h3>
+            </div>
+            <div class="col-xs-10">
+                <h5>Short term goals</h5>
+                <ul>
+                    <li>Platform stabilization</li>
+                    <li>Tools for 3rd party developers</li>
+                </ul>
+                <h5>2-3 year goals</h5>
+                <ul>
+                    <li>Scalability for large internet services and IoT</li>
+                    <li>Keep it small enough for home users</li>
+                    <li>Better security and encryption</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2017</h4>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li>New Monetary Policy <small>(ECIP-1017)</small></li>
+                    <li>Emerald Wallet</li>
+                    <li>Dapp SDK <small>(based on Emerald Project)</small></li>
+                    <li>Standalone & embeddable EVM <small>(with debugger for EVM code)</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2018</h4>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li>Light client for IoT and Mobile</li>
+                    <li>Scalability improvement and sharding <small>(towards to 1,000+ tx/sec)</small></li>
+                    <li>Improve cryptography on EVM <small>(for zero knowledge proof,
+                        homomorphic encryption, etc)</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3> <h4>2019</h4>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li>Hybrid consensus research</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <hr/>
+            <div class="col-xs-12 text-center">
+                <h2>Detailed Roadmap for current projects</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='roadmap inviewport animated delay1' data-effect="fadeInLeft">
+    <div class="container">
+        <div class="row">
+            <h2 class="heading">Monetary Policy</h2>
+            <p class="subheading">ECIP-1017 - modified Monetary Supply to add cap to total coins</p>
+        </div>
+        <%
+        def ecip1017 = [
+            [
+            calend: "Feb",
+            title: "Discussion <small>Agreed</small>",
+            description: "Initial discussion of ECIP-1017 with the community"
+            ],
+            [
+            calend: "Mar",
+            title: "Geth architecture redesign <small>Done</small>",
+            description: "Prepare Geth to support different model of monetary supply, instead of current hardcoded one."
+            ],
+            [
+            calend: "Apr",
+            title: "Implementation <small>In Progress</small>",
+            description: "Implement and test ECIP-1017 Monetary Policy in Geth code"
+            ],
+            [
+            calend: "May",
+            title: "Testnet",
+            description: "Run new monetary policy on private testnet, then release to public testnet"
+            ],
+            [
+            calend: "Jun",
+            title: "Add Support to Parity",
+            description: "Implement and test ECIP-1017 Monetary Policy in Parity code"
+            ],
+            [
+            calend: "Jul",
+            title: "Enable in mainnet",
+            description: "After we'll see that we don't have any issues on Testnet, we can configure and enable ECIP-1017 " +
+                "Monetary Policy for Mainnet. First change to Coin Issues will happen at block 5,000,000 which is " +
+                "expected at the end of 2017 year."
+            ]
+        ];
+        %>
+
+        <% ecip1017.each { phase -> %>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3>
+                <h4>${phase.calend}</h4>
+            </div>
+            <div class="col-xs-10">
+                <h3>${phase.title}</h3>
+                <p>${phase.description}</p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+</section>
+
+<section class='roadmap inviewport animated delay1' data-effect="fadeInLeft">
+    <div class="container">
+        <div class="row">
+            <h2 class="heading">Emerald Platform</h2>
+            <p class="subheading">Reference Ethereum Classic wallet and a SDK for 3rd party developers</p>
+        </div>
+
+        <%
+        def wallet = [
+            [
+            calend: "Mar",
+            title: "Development version <small>Done</small>",
+            description: "A MVP or proof of concept. Basic version suitable for developers to build and run on local machine"
+            ],
+            [
+            calend: "Apr",
+            title: "Internal Beta <small>In Progress</small>",
+            description: "Bundle for a desktop for testing"
+            ],
+            [
+            calend: "May",
+            title: "Public Beta",
+            description: "First public release of a desktop version"
+            ],
+            [
+            calend: "Jun",
+            title: "Polished version",
+            description: "UX/UI refactoring, professional design, installer, instructions and help"
+            ],
+            [
+            calend: "Jun",
+            title: "Contract Developer Suite",
+            description: "A desktop app built on top of SDK for Ethereum Classic contract developers (compile and deploy contracts, monitor state)"
+            ],
+            [
+            calend: "Jul",
+            title: "SDK for 3rd party developers",
+            description: "Release a SDK for 3rd party developers as a standalone set of tools to build full functional app. Provide Javascript UI components and libraries"
+            ]
+
+        ];
+        %>
+        <% wallet.each { phase -> %>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3>
+                <h4>${phase.calend}</h4>
+            </div>
+            <div class="col-xs-10">
+                <h3>${phase.title}</h3>
+                <p>${phase.description}</p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+</section>
+
+<section class='roadmap inviewport animated delay1' data-effect="fadeInLeft">
+    <div class="container">
+        <div class="row">
+            <h2 class="heading">Sputnik VM</h2>
+            <p class="subheading">A new EVM for Ethereum Classic</p>
+        </div>
+
+        <%
+        def sputnikvm = [
+        [
+        calend: "Apr",
+        title: "Initial version <small>In Progress</small>",
+        description: "As a standalone VM, and Rust lib. With socket api to communicate"
+        ],
+        [
+        calend: "Jun",
+        title: "Beta with Debugging API",
+        description: "Ability to execute and get tracing/debugging details for arbitrary code against provided state"
+        ],
+        [
+        calend: "Aug",
+        title: "Production version",
+        description: "Extensive testing with real data, full Integration Testing suite"
+        ],
+        [
+        calend: "Oct",
+        title: "Geth Integration",
+        description: "Integrate into Classic Geth"
+        ],
+
+        ];
+        %>
+        <% sputnikvm.each { phase -> %>
+        <div class="row">
+            <div class="col-xs-2 calendar">
+                <h3><i class="mdi mdi-calendar-clock"></i></h3>
+                <h4>${phase.calend}</h4>
+            </div>
+            <div class="col-xs-10">
+                <h3>${phase.title}</h3>
+                <p>${phase.description}</p>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+</section>

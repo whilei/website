@@ -1,0 +1,268 @@
+---
+layout: default
+title: ""
+published: true
+features: banner
+---
+
+<section id='team'>
+    <div class="container">
+    <div class="row">
+        <h1 class="heading">Meet Our Team</h1>
+        <div class="headul"></div>
+        <p class="subheading">ETCDEV Team is a group of professional software engineers working
+            full time on Ethereum Classic core projects</p>
+    </div>
+    <div class="row team4">
+        <h2 class="heading">Engineers</h2>
+
+        <%
+        def team = [
+            [name: "Igor Artamonov", twitter: "splix", github: "splix", nick: "splix", role: "Team CTO"],
+            [name: "Dmitry Ulanov",  github: "dulanov", nick: "dulanov", role: "Rust Developer"],
+            [name: "Stewart Mackenzie", twitter: "sj_mackenzie", github: "sjmackenzie", nick: "sjm", role: "Rust Developer"],
+            [name: "Wei Tang", github: "sorpaas", nick: "sorpaas", role: "Rust Developer"],
+            [name: "Constantine Kryvomaz", github: "r8d8", nick: "bunda", role: "Rust Developer"],
+            [name: "Isaac Ardis", twitter: "isaacardis", github: "whilei", nick: "ia", role: "Go Developer"],
+        ]
+        team.each { m ->
+        %>
+        <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member inviewport animated delay1" data-effect="fadeInUp">
+            <div class="pic">
+                <img alt="member-image" class="img-responsive" src="${r 'media/' + m.nick + '.jpg'}">
+                <div class="social">
+                    <% if (m.github != null) { %>
+                    <a href="https://github.com/${m.github}"><i class="mdi mdi-github-circle text-on-primary"></i></a>
+                    <% } %>
+                    <% if (m.twitter != null) { %>
+                    <a href="https://twitter.com/${m.twitter}"><i class="mdi mdi-twitter text-on-primary"></i></a>
+                    <% } %>
+                </div>
+            </div>
+            <div class="info">
+                <h3><% if (m.name != null) { %>${m.name} <% } %><small>@${m.nick}</small></h3>
+                <h4>${m.role}</h4>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+    <div class="row team4" style="padding-top: 50px">
+        <h2 class="heading">Staff</h2>
+
+        <div class="col-lg-offset-3 col-lg-6 col-sm-offset-1 col-sm-10 col-xs-12 col-xs-offset-0">
+            <div class="row">
+            <%
+            def managers = [
+            [name: "Matthew Mazur", twitter: "snaproII", nick: "snaproll", role: "Strategic Analyst", photo: "snaproll"],
+            [name: "Carlos Graterol", twitter: "chucksrq", nick: "chucksrq", role: "Marketing", photo: "chucksrq" ],
+            ];
+
+            managers.each { m ->
+            %>
+            <div class="col-md-6 col-sm-6 col-xs-12 member inviewport animated delay1" data-effect="fadeInUp">
+                <div class="pic">
+                    <img alt="member-image" class="img-responsive" src="${r 'media/' + m.photo + '.jpg'}">
+                    <div class="social">
+                        <% if (m.github != null) { %>
+                        <a href="https://github.com/${m.github}"><i class="mdi mdi-github-circle text-on-primary"></i></a>
+                        <% } %>
+                        <a href="https://twitter.com/${m.twitter}"><i class="mdi mdi-twitter text-on-primary"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3><nobr><% if (m.name != null) { %>${m.name}<% } %></nobr> <small>@${m.nick}</small></h3>
+                    <h4>${m.role}</h4>
+                </div>
+            </div>
+            <% } %>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row team6" style="padding-top: 50px">
+        <h2 class="heading">Advisors</h2>
+
+        <div class="col-md-1">
+        </div>
+
+        <%
+        def extra = [
+        [name: "Dr. Avtar Sehra", twitter: "avtarsehra", nick: "avtarsehra", role: "Advisor", photo: "avtarsehra"],
+        [twitter: "arvicco", nick: "arvicco", role: "Advisor", photo: "etcface"],
+        [name: "Elaine Ou", twitter: "eiaine", nick: "elaine", role: "Advisor", photo: "elaine"],
+        [name: "Cody Burns", twitter: "DontPanicBurns", nick: "dontpanicburns", role: "Advisor", photo: "dontpanicburns"],
+        [name: "Yates Randall", nick: "etherninja", role: "Advisor", photo: "etherninja"],
+        ];
+
+        extra.each { m ->
+        %>
+        <div class="col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member inviewport animated delay1" data-effect="fadeInUp">
+            <div class="pic">
+                <img alt="member-image" class="img-responsive" src="${r 'media/' + m.photo + '.jpg'}">
+                <div class="social">
+                    <% if (m.github != null) { %>
+                    <a href="https://github.com/${m.github}"><i class="mdi mdi-github-circle text-on-primary"></i></a>
+                    <% } %>
+                    <% if (m.twitter != null) { %>
+                    <a href="https://twitter.com/${m.twitter}"><i class="mdi mdi-twitter text-on-primary"></i></a>
+                    <% } %>
+                </div>
+            </div>
+            <div class="info">
+                <h3><nobr><% if (m.name != null) { %>${m.name}<% } %></nobr> <small>@${m.nick}</small></h3>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="heading">Projects</h1>
+            <div class="headul"></div>
+            <p class="subheading">ETCDEV Team does work on a set of core Ethereum Classic projects</p>
+        </div>
+
+        <div class="row">
+        <div class="features">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+                <div class="icon">
+                    <i class="mdi mdi-amplifier"></i>
+                </div>
+                <div class="info">
+                    <h3 class="title">ETC Geth</h3>
+                    <p>Fork of original EF Geth, which is a reference implementation of Ethereum Classic protocol now</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+                <div class="icon">
+                    <i class="mdi mdi-briefcase-check"></i>
+                </div>
+                <div class="info">
+                    <h3 class="title">Emerald SDK</h3>
+                    <p>An official desktop wallet, and a flexible SDK to build custom applications on top of Ethereum
+                    Classic blockchain</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+                <div class="icon">
+                    <i class="mdi mdi-bank"></i>
+                </div>
+                <div class="info">
+                    <h3 class="title">Monetary Policy</h3>
+                    <p>ECIP-1017 which adds a cap (5M20) to total issued coins in Ethereum Classic blockchain. The team
+                        is working on implementation for both Parity and Geth, does full testing cycle of the
+                        new supply model, and examines for possible attacks</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+                <div class="icon">
+                    <i class="mdi mdi-cube-send"></i>
+                </div>
+                <div class="info">
+                    <h3 class="title">Sputnik VM</h3>
+                    <p>A new implementation of Ethereum Virtual Machine with main focus on performance and reliability. It
+                        can be used as a standalone EVM to help developers to build their Dapps, or embed into other
+                        apps</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="heading">Blog</h1>
+            <div class="headul"></div>
+        </div>
+
+        <div class="row">
+            <%
+            site.pages
+                .findAll { it.layout == 'article' }
+                .sort { it.date }
+                .reverse()
+                .each { post ->
+            %>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+                <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
+                <p>${post.description}</p>
+            </div>
+            <%
+            }
+            %>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <%
+            site.pages
+            .findAll { it.layout == 'weekly' }
+            .sort { it.date }
+            .reverse()
+            .take(3)
+            .each { post ->
+            %>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+                <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
+                <p>${post.description}</p>
+            </div>
+            <%
+            }
+            %>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h1 class="heading">Support Us</h1>
+            <div class="headul"></div>
+            <p class="subheading">ETCDEV Team is a non-profit organization supported by donations. You can support the
+                team by sending ETC or BTC to addresses below.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 donation inviewport animated delay1" data-effect="fadeInUp"
+                 data-address="${site.config.etcdev.etcaddr}">
+                <div class="info">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <p class="qr"></p>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <h3 class="title">ETC <span class="hidden-xs">(Any Token/Coin)</span></h3>
+                            <h4 class="addr">${site.config.etcdev.etcaddr}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 donation inviewport animated delay1" data-effect="fadeInUp"
+                 data-address="${site.config.etcdev.btcaddr}">
+                <div class="info">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                            <p class="qr"></p>
+                        </div>
+                        <div class="col-sm-8 col-xs-12">
+                            <h3 class="title">BTC (Bitcoin)</h3>
+                            <h4 class="addr">${site.config.etcdev.btcaddr}</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+

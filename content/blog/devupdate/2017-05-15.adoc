@@ -1,0 +1,12 @@
+---
+layout: weekly
+published: true
+contributors: elaineo
+---
+
+* (Geth) final fixes before release 3.4.0
+* (Geth) ECIP-1017 Monetary Policy implementation (not yet released!)
+* (Geth) tools to dump specific addr/block
+* (Emerald) Switch between testnet/mainnet
+* (Emerald) Import existing accounts in JSON
+* (SputnikVM) Opcodes and implementation for storage/memory, access to blockchain data

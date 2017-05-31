@@ -1,0 +1,13 @@
+---
+layout: weekly
+published: true
+contributors: elaineo, odeke-em
+---
+
+* (Emerald) Provide additional details (title, description) and improved account import
+* (Emarald) Run Geth backend with the wallet app
+* (Emerald) Addressbook backend
+* (Geth) Release 3.4.0 https://github.com/ethereumproject/go-ethereum/releases/tag/v3.4.0
+* (SputnikVM) Gas calculation for code deposit
+* (SputnikVM) CALLCODE implementation
+* (SputnikVM) documentation

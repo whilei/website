@@ -1,0 +1,10 @@
+---
+layout: weekly
+published: true
+contributors: elaineo
+---
+
+* Presentation during Consensus 2017 Event https://www.youtube.com/watch?v=UYke0KZxHSM
+* (Emerald) Base for interface internationalization (i18n)
+* (Geth) Improve performance for large setups (100k+ accounts)
+* (SputnikVM) testing against Geth

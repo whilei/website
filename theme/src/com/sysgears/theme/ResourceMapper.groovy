@@ -29,12 +29,18 @@ class ResourceMapper {
         }
 
         int week = 0
+        def prevWeek = null
         refinedResources.findAll {
             it.layout == 'weekly'
         }.sort {
             it.date
         }.each {
             it.put('number', week)
+            if (prevWeek != null) {
+                it.put('prevWeekUrl', prevWeek.url)
+                prevWeek.put('nextWeekUrl', it.url)
+            }
+            prevWeek = it
             week++
         }
 

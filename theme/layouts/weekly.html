@@ -45,6 +45,20 @@ ${include 'header.html'}
             <% } %>
             </div>
         </div>
+        <div class="row">
+            <hr/>
+            <div class="col-xs-12 text-center">
+                <% if (page.number > 0) { %>
+                <a href="${page.prevWeekUrl}">See Week #${page.number - 1}</a>
+                <% } %>
+                <% if (page.number > 0 && page.nextWeekUrl != null) { %>
+                &nbsp;|&nbsp;${page.number}&nbsp;|&nbsp;
+                <% } %>
+                <% if (page.nextWeekUrl != null) { %>
+                <a href="${page.nextWeekUrl}">See Week #${page.number + 1}</a>
+                <% } %>
+            </div>
+        </div>
     </div>
 </section>
 ${include 'footer.html'}

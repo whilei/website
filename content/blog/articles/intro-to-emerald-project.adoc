@@ -1,0 +1,92 @@
+---
+layout: article
+title: Intro to Emerald Project
+published: true
+date: 17.05.2017 12:00
+image: media/intro-to-emerald.png
+---
+
+As many of our readers know, the ETCDEV team is working on the Emerald Project, which is going to be a platform
+for future decentralized applications (dapps) on the Ethereum Classic blockchain. One of the first of these dapps will
+be the Emerald Wallet, but the project is not limited to just being a wallet. With this article we’re going to explain
+what the Emerald project is and why it’s important for the future of ETC.
+
+## What Problems do the Emerald Project Solve?
+
+The first and most obvious problem solved by the Emerald Project is that there is currently no wallet for the Ethereum
+Classic community that verifies transactions for users in a trustless way.
+
+Other problems that the Emerald Project aims to solve is that there's currently no common framework for developers to
+build dApps on Ethereum Classic, a lack of User Interface (UI) components, and no standard practices for 3rd party
+developers.
+
+As a result every Dapp developer has to reinvent the entire architecture and components for new dApps, reimplement
+methods to integrate with hardware wallets, and build individual support for Ethereum smart contract features and
+tokens. It’s very time consuming, expensive and it’s hard to integrate Ethereum into existing apps on the server/client
+side, because the RPC API provided by Geth/Parity is just too low level for most use cases.
+
+## Architecture
+
+The main idea behind the Emerald Project is to use a modular approach, and split apps into several replaceable layers
+with reusable components, which can be later replaced or integrated into 3rd party dapps.
+
+Emerald has the following parts:
+
+* https://github.com/ethereumproject/go-ethereum[Geth], or other service which provides standard Web3 API
+* UI for desktop, mobile, web or console
+* Connector UI < - > Chain, which also operates all private data, such as private keys, address book, tracked contracts
+   & tokens, etc
+
+RPC Node can be a local full node, such as Geth or Parity, or a remote API endpoint, which is already provided by
+https://mewapi.epool.io[epool.io] and http://api.gastracker.io/web3[GasTracker]. This will allow users to run
+the Emerald wallet in light mode, without syncing the full chain.
+
+UI part is replaceable too. We’re working on a simple CLI which is usable for scripting. In addition to that we expect
+that someone (i.e not even from our team) will come with full-featured text-mode wallet interface, for those of us
+who don’t trust browsers. Just because it’s fun to build some vim-like (or emacs-like?) wallet :)
+
+Connector basically unifies those two sides. Runs as a standalone app, but is also going to be embeddable into other
+apps also. This layer operates your keys, signs transactions, and so on. This layer also cares about hardware wallets,
+can give your UI a simplified access point to Ledger/Trezor and others. We are trying to make a connector as
+lightweight as possible, to make it usable not only on mobile platforms, but on IoT and specialized hardware. Maybe
+someone will make a hardware Dapp on top of it.
+
+## Tech
+
+* Rust for Connector layer. Very lightweight and embeddable
+* React + Redux for Javascript UI
+** Material UI as base style
+** ES6 with Babel and Webpack
+* Electron to bundle it as a desktop app
+
+See https://github.com/ethereumproject/emerald-wallet and https://github.com/ethereumproject/emerald-rs
+
+## What it’s going to provide
+
+* React UI components as separate library, to build your own Dapp or even wallet
+* Javascript library for general use of Ethereum Classic, access APIs, common utilities, etc
+* A library to integrate connector into other apps, native to Rust language, or through FFI into languages such as
+  Go, Python and others
+* Command line utility usable for server scripting (allow to sign transactions, read balance, including tokens,
+  contracts, etc)
+* Set of graphical components and Style Guide (fonts, colors, icons)
+
+## SDK
+
+As it was mentioned in the beginning, a wallet is just a first step. One of ETC Dev’s ultimate goals is a Software
+Development Kit for Ethereum Classic Dapps. Which means that Emerald Project would become a platform for a set of
+other Dapps. It will provide a set of tools to build your own Dapps with instruments to test and pack as a desktop,
+web or mobile app.
+
+## Plans
+
+Currently the ETCDEV team and ETC community is focusing on building the Emerald Wallet. It will be comprised of all
+these components in one place. In the future,  the ETCDEV team is going to start splitting Emerald into several
+independent pieces, separating Emerald SDK and building a second Dapp, which is going to be an app for Smart Contract
+developers (develop/deploy/debug cycle). In addition to that, ETCDEV is going to work on a separate command-line
+utility to help 3rd party software to be integrated into Ethereum Classic.
+
+These tasks will take time, several iterations and releases, but a beta version of Emerald Wallet, as a first app
+of this series, is expected to be released in the following weeks. We have a pretty functional Minimal Viable
+Product (MVP) ready, and we are now working on a nice and usable UI.
+

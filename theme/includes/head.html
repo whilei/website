@@ -19,7 +19,12 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="${page.title}" />
     <meta property="og:description"        content="${page.description}" />
+    <% if (page.image) { %>
+    <meta property="og:image"              content="${site.url}${r page.image}" />
+    <meta property="twitter:image"         content="${site.url}${r page.image}" />
+    <% } else { %>
     <meta property="og:image"              content="${site.url}/images/etcface_nobg.png" />
+    <% } %>
     <meta name="twitter:card"              content="summary" />
     <meta name="twitter:site"              content="@etcdev" />
 

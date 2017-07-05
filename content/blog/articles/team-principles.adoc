@@ -8,29 +8,29 @@ date: 15.03.2017 09:00
 ## Pragmatic approach
 
 Our main focus is on making Ethereum Classic a stable _and_ usable technology. Opposite to _move fast and break things_.
-That also means making right architecture design, with taking into account how our projects are going to be used by 3rd
-party developers, and how it is going to be maintained in next decade.
+This means ensuring the correct architecture design. We also need to account for how 3rd
+party developers use our projects. We need to consider how to ensure that the project is maintained over next decade.
 
-It’s important to mention here that our team lead by seasoned developers, each with more than 10 years of experience
+An important point to remember is our team lead by seasoned developers, most of them with more than 10 years of experience
 in software engineering. We understand how to build a system supposed to work for years, we saw them a lot and we
 know common pitfalls.
 
 ## Technology, not a product
-We are working on Ethereum Classic as a technology, on protocol and tools for developers. Making a product from it is
-not our goal. It means that instead of providing an ultimate node implementation, or an ultimate wallet for ETC, we
+We are working on Ethereum Classic as a technology, and as protocol and tools for developers. Making a product from it is
+not our primary goal. Instead of providing an ultimate node implementation, or an ultimate wallet for ETC, we would
 rather provide a set of components for different implementations, different modules and tools for 3rd party developers.
 
 ## Apache 2 license
-We don’t want to limit usage of ETC technology, any 3rd party developer or business should be able to include part of
-our technologies into their applications without any restriction. To allow that we have been developing all new
-projects under most commercial friendly license _Apache 2_.
+We don’t want to limit usage of ETC technology. Any 3rd party developer or business should be able to adopt part of
+our technologies into their applications without any restriction. To allow that we have been developing all
+our new projects under the business friendly license, _Apache 2_.
 
 The only exception at the moment is _Geth Classic_, which came from EF and it was already licensed under _GPL/LGPL_.
-Unfortunately we can’t do anything with that now, and we’ll continue Geth development under same license. This is our
-main client, a reference implementation, and we’ll continue to maintain it and add new features as well.
+Unfortunately, we can’t do anything with that now. We will continue Geth development under same license. This is currently our
+main client and a reference implementation. We will continue to maintain it and add new features as well.
 
-But to improve that situation with Geth license, we have a strategy to provide replacements for critical parts as a
-separate modules, which can be useful for 3rd party developers. These modules going to be developed from scratch, and
+To improve that situation with Geth license we have a strategy to provide replacements for critical parts as a
+separate modules. This will useful for 3rd party developers. Development of these modules will be from scratch and
 licensed under Apache 2 as well. This will include new EVM, State storage and network protocol library.
 
 ## Non Profit
@@ -40,17 +40,16 @@ because we think at current state it’s really important to focus on protocol a
 It also includes that we don’t implement features in return to donations or investments. And every major decision
 related to core development comes through Ethereum Classic community discussion and ECIP process.
 
-## Working close with the community
-We are a standalone team, but our intention is to help Ethereum Classic. We’re following Open Source principles for
-development and fully dedicated to Ethereum Classic community. There’re many other members in Ethereum Classic community
-who works on same projects with us, participate in discussion, send Pull Requests and ECIPs, and provide other help.
-We’re working together on our common goal.
+## Working closely with the community
+We are a standalone team, but our intention is to help Ethereum Classic. We follow Open Source principles for
+development. We're dedicated to the growth of the Ethereum Classic community. There are many other members in Ethereum Classic community
+who work on projects with us, participate in discussion, send Pull Requests and ECIPs, and provide other help.
+We’re working together on towards a common goal.
 
-Igor Artamonov (@splix), team CTO, has been working all his time on Ethereum Classic since the first day. He has been
-constantly looking for passionate developers, and has been building a team of like-minded people to help
-Ethereum Classic development.
+Igor Artamonov (@splix), team CTO, has been working all his time on Ethereum Classic since the first day. He continues
+to search for passionate developers, building a team of like-minded people to further the development of Ethereum Classic.
 
-More to that, our advisors are the people who joined Ethereum Classic in first few days after HF happened. That’s the
-people who truly passionate about Ethereum Classic, and they help us with different aspects of our work.
+Our advisors are the people who joined Ethereum Classic in first few days after the Hard Fork happened. They are the
+people who are truly passionate about Ethereum Classic, and they continue to help us with different aspects of our work.
 
 

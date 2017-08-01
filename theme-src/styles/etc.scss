@@ -236,6 +236,7 @@ section .container {
   }
 
   .member {
+    height: 455px;
     .pic img {
       //height: 262px;
     }
@@ -243,6 +244,9 @@ section .container {
 }
 
 .team6 {
+  .member {
+    height: 327px;
+  }
   .info {
     h3 {
       font-size: 18px;
@@ -271,7 +275,16 @@ section .container {
     margin-bottom: 0;
   }
 
+  .team4 {
+    .member {
+      height: 800px;
+    }
+  }
+
   .team6 {
+    .member {
+      height: 370px;
+    }
     .info {
       h3 {
         font-size: 18px;

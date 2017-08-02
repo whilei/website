@@ -25,7 +25,7 @@ class ResourceMapper {
     def map = { resources ->
 
         def refinedResources = resources.findResults(filterPublished).collect { Map resource ->
-            fillDates << addDescription << resource
+            setCategory << fillDates << addDescription << resource
         }
 
         int week = 0
@@ -100,5 +100,17 @@ class ResourceMapper {
                 description: StringUtils.abbreviate(html, 160).replaceAll(~/[\n"']/, '').replaceAll(~/\s+/, ' ')
         ]
         it + update
+    }
+
+    private def setCategory = { Map it ->
+        def update = [:]
+        if (it.layout in ['weekly', 'article']) {
+            if (it.location.startsWith('/blog/articles')) {
+                update.post_category = 'article'
+            } else if (it.location.startsWith('/blog/devupdate')) {
+                update.post_category = 'devupdate'
+            }
+        }
+        return it + update
     }
 }

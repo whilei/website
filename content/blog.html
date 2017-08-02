@@ -10,7 +10,7 @@ published: true
             <h1>Articles</h1>
             <%
             site.pages
-            .findAll { it.layout == 'article' }
+            .findAll { it.post_category == 'article' }
             .sort { it.date }
             .reverse()
             .each { post ->
@@ -28,7 +28,7 @@ published: true
             <h1>Development Updates</h1>
             <%
             site.pages
-            .findAll { it.layout == 'weekly' }
+            .findAll { it.post_category == 'devupdate' }
             .sort { it.date }
             .reverse()
             .take(10)

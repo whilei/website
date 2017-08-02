@@ -8,7 +8,7 @@
     <generator uri="http://sysgears.com/grain/">Grain</generator>
 
     <% site.pages
-        .findAll { it.layout == 'article' || it.layout == 'weekly' }
+        .findAll { it.post_category != null }
         .sort { it.date }
         .reverse()
         .take(20)

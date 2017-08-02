@@ -154,7 +154,7 @@ features: banner
         <div class="row">
             <%
             site.pages
-                .findAll { it.layout == 'article' }
+                .findAll { it.post_category == 'article' }
                 .sort { it.date }
                 .reverse()
                 .each { post ->
@@ -172,7 +172,7 @@ features: banner
             <hr/>
             <%
             site.pages
-            .findAll { it.layout == 'weekly' }
+            .findAll { it.post_category == 'devupdate' }
             .sort { it.date }
             .reverse()
             .take(3)

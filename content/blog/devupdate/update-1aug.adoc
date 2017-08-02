@@ -1,0 +1,37 @@
+---
+layout: article
+title: August 1st Dev Update
+published: true
+date: 1.08.2017 09:00
+---
+
+Last Dev Update was at end of May, but it doesn't mean we stopped the work. Quite opposite, we were too busy on Geth,
+on Emerald project and on SputnikVM. Making a Dev Update requires time, at least one hour per week taken from
+development time, and it's not the thing we can afford right now. We understand that informing our users about
+the progress is important job, so we're going to continue publishing such reports, just once a month or two instead of weekly updates.
+Until we'll become big enough to have a dedicated person for this kind of communication.
+
+Short list of ETCDEV Team progress for past 2 months:
+
+ * two releases of Geth - https://github.com/ethereumproject/go-ethereum/releases
+ * two Alpha and the Beta release of Emerald Wallet - https://github.com/ethereumproject/emerald-wallet/releases
+ * working implementation of SputnikVM, fully tested against whole history of ETC blockchain. Currently published
+   as an crate library - https://crates.io/crates/sputnikvm
+ * set of other libraries and mini projects developed
+   ** Janus, which helps us to distribute every successful build to public server - https://github.com/ethereumproject/janus
+   ** Set of reusable Rust libs to operate common ETC data structures - https://github.com/ethereumproject/etcommon-rs
+ * started to work on ECIPs for
+   ** on-chain voting for protocol upgrades (https://github.com/ethereumproject/ECIPs/pull/62[ECIP-1022], https://github.com/ethereumproject/ECIPs/pull/64[ECIP-1023], https://github.com/ethereumproject/ECIPs/pull/65[ECIP-1024])
+   ** security and zkSNARK (https://github.com/ethereumproject/ECIPs/pull/66[ECIP-1025], https://github.com/ethereumproject/ECIPs/pull/67[ECIP-1026])
+   ** scalability through sidechains (https://github.com/ethereumproject/ECIPs/pull/69[ECIP-1027, ECIP-1028])
+ * started to deploy all artifacts to http://builds.etcdevteam.com
+
+
+Emerald Wallet is our new project, and it just reached first Beta version. We expect more beta releases before
+Release Candidate of the wallet. We still don't have any JS developer in our team who will work full time on the
+project, and a lot of the work was done by community volunteers. Huge thanks to https://github.com/elaineo[@elaineo]
+and https://github.com/gagarin55[@gagarin55].
+
+We expect that a JS developer will join our team this week, on a full time basis, but we still looking for more
+developers who would be interested to join (see link:/job-senior-javascript.html[job info]). Want to notice that
+all of our current developers started as community volunteers and we're happy to have them in our team.

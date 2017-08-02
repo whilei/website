@@ -23,6 +23,7 @@ features: banner
             [name: "Constantine Kryvomaz", github: "r8d8", nick: "bunda", role: "Rust Developer"],
             [name: "Isaac Ardis", twitter: "isaacardis", github: "whilei", nick: "ia", role: "Go Developer"],
         ]
+        Collections.shuffle(team);
         team.each { m ->
         %>
         <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member inviewport animated delay1" data-effect="fadeInUp">

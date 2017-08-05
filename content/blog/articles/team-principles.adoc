@@ -34,7 +34,7 @@ separate modules. This will useful for 3rd party developers. Development of thes
 licensed under Apache 2 as well. This will include new EVM, State storage and network protocol library.
 
 ## Non Profit
-That’s most controversial moment, but we’re aren’t doing consulting, or development for 3rd party services. That’s
+That’s most controversial moment, but we aren’t doing consulting, or development for 3rd party services. That’s
 because we think at current state it’s really important to focus on protocol and technology itself.
 
 It also includes that we don’t implement features in return to donations or investments. And every major decision

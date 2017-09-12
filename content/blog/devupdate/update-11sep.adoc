@@ -1,0 +1,88 @@
+---
+layout: article
+title: September 11th Dev Update
+published: true
+date: 11.09.2017 09:00
+---
+
+=== The team
+
+We are very glad to welcome Javascript
+developer *Yury (@gagarin55)*. Yury has a broad and diverse background in blockchain
+technology and applications, and has been a longtime steady and vital force in the ETC community.
+He's wasted no time in providing a myriad of firm, yet gentle, refactorings, fixes, and new features for
+Emerald Wallet.
+
+In addition to @gagarin55 we got *Alexey @sudachen*, who has joined just today. He has been working in software development
+industry for more than 20 years. He has a huge
+experience in Virtual Machines and Virtualization, Cybersecurity and Antivirus tools, etc. He is going to
+work on our Geth, SputnikVM and Emerald project.
+
+And as always, we are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions. I'm going to embarass
+myself by listing too few deserving names...
+@elaineou, @pyskell, @dontpanicburns, @etherninja, @dulanov, @dexaran, @seberino,
+and the list goes on... Again, thank _you all_.
+
+
+=== The projects
+
+==== Geth
+
+Implemented https://github.com/ethereumproject/ECIPs/blob/master/ECIPs/ECIP-1017.md[ECIP-1017] monetary
+ policy protocol changes in the https://github.com/ethereumproject/go-ethereum/releases/tag/v4.0.0[*4.0.0 release*].
+ We spent a lot of time on testing new Monetary Policy, even created a special tool
+ that allows us and a anyone else to run a simulation of the new Monetary Policy (with a real Geth and Parity nodes
+ of course) and check that it's working by yourself. More about this tool and the process how we were testing it
+ in one of the following articles. _If you use Geth, please upgrade!_
+
+We were also working on other features and improvements, including
+ establishing a machine-logging system (as yet unreleased) for use with log parsers/+analysis, e.g.
+ Filebeat/Elasticsearch/Logstash/Kibana. Please keep in
+ mind that we're still working on improving monitoring and logging, and there will be a separate release focused on this
+ features as soon as we'll finalize the format and instruments.
+
+The latest stable releases can always be found on
+ the https://github.com/ethereumproject/go-ethereum/releases[Github Release page], and change details
+ can be found in https://github.com/ethereumproject/go-ethereum/blob/master/CHANGELOG.md[the changelog]
+
+==== SputnikVM
+
+- Created https://github.com/ethereumproject/sputnikvm-dev/releases[SputnikVM-Dev], an interactive environment using
+https://github.com/ethereumproject/sputnikvm[SputnikVM] and https://github.com/ethereumproject/etcommon-rs[etcommon]
+to enable *development and testing on SputnikVM via RPC*. Just look at all
+those https://github.com/ethereumproject/sputnikvm-dev[supported methods]!
+- For bonus points, @sorpaas also built a minimalist (but fully functioning!) client with Sputnik and
+etcommon called https://github.com/sorpaas/etclient[etclient].
+
+
+==== Emerald Wallet
+
+- A *second beta release* https://github.com/ethereumproject/emerald-wallet/releases/tag/v0.5.0[v0.5.0-beta2] of
+Emerald Wallet was released last week, including features, improvements, and fixes relating to key import/export,
+hardware support, and UI improvements.
+- Extracted reusable Javascript components to a new package https://github.com/ethereumproject/emerald-js[emerald-js].
+
+
+==== Emerald Vault + CLI
+
+- Refactored Emerald Vault into *two packages*: https://github.com/ethereumproject/emerald-rs[Emerald Vault] now
+contains the Emerald business and security logic, and https://github.com/ethereumproject/emerald-cli[Emerald CLI]
+now contains the user-facing CLI application connected with Vault. This separation of concerns should pave the way
+for smoother future-feature implementations and core and Dapp developer experiences.
+
+
+=== ECIPs
+
+Several new proposals have been added, including
+
+- designs for a *stealth account schema*
+- a fallback plan for *Difficulty Bomb Diffusion*
+- a recursive length prefix *(RLP) media type* for streamlining HTTP responses
+- changes relating to the *GHOST protocol* for using uncles in total difficulty calculation
+- options for increasing address and transaction *readability*
+- an outline for beginning discussions around *sidechains*
+
+As usual, all proposals associated discussions can be found in the
+https://github.com/ethereumproject/ECIPs/pulls[ECIPs Github repository]. Please participate in discussions, on Github
+or on https://gitter.im/ethereumproject/ECIPs[Gitter chat for ECIPs]

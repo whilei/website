@@ -18,13 +18,6 @@ industry for more than 20 years. He has a huge
 experience in Virtual Machines and Virtualization, Cybersecurity and Antivirus tools, etc. He is going to
 work on our Geth, SputnikVM and Emerald project.
 
-And as always, we are extremely grateful to *the many volunteers and members of our community* for
-so many creative, thoughtful, and ongoing contributions. I'm going to embarass
-myself by listing too few deserving names...
-@elaineou, @pyskell, @dontpanicburns, @etherninja, @dulanov, @dexaran, @seberino,
-and the list goes on... Again, thank _you all_.
-
-
 === The projects
 
 ==== Geth

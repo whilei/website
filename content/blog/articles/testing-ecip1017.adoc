@@ -1,0 +1,87 @@
+---
+layout: article
+title: Testing ECIP-1017 New Monetary Policy
+published: true
+date: 27.09.2017 09:00
+---
+
+This December Ethereum Classic will switch to a new monetary policy, which comes under ECIP-1017. It was actively
+discussed this past winter, and was accepted by the community. We at ETCDEV had implemented it by May, for both
+Parity and Geth, and have been testing extensively after that. In early September it was enabled on Mainnet with
+https://github.com/ethereumproject/go-ethereum/releases[Geth 4.x.x] (and also enabled on Morden testnet at block 2M).
+
+In addition to testing our implementation via unit tests and manual testing, we decided that we need to provide a
+public system to verify full integration with a network. These tools and environments would then be useful for
+hobbyists experimenting with ETC, for Dapp developers to test compatibility with upcoming fork, and as a composable,
+reusable system to explore and test network integration in the future.
+
+A private chain fits these needs well, since it can be easily configured to exactly simulate the anticipated
+“real-world” chain configuration rollout. With that in mind, our next challenge would be to establish an easy-to-use
+system to deploy and then verify the behavior of the network.
+
+## Test network
+
+We designed a simple network, with 8 nodes and 2 miners, using a mix of Parity and Geth clients. To more realistically
+replicate the real network, we added simulation of network issues and latency. This allowed us to demonstrate fair
+block and uncle distribution. The configuration would also allow CPU mining, enabling it to be run on basic hardware.
+
+You can run the following topology in few clicks with https://cloud.google.com/container-engine/[Google Cloud Containers],
+or in any https://kubernetes.io/[Kubernetes] cluster.
+
+image::${r 'media/test-ecip1017-topology.png'}[]
+
+We’ve prepared set of command line tools to setup the network, check status and verify resulting blockchain and miners
+earnings. While ECIP-1017 specified a new era every 5,000,000 (5 million) blocks, our default configuration would be
+500 blocks, so in 2-3 hours (instead of 2-3 years!) of running that private chain, the network will switch to an era
+covered by ECIP-1017 with 20% reduced monetary supply, and we’ll be able to verify that block reward and miner total
+earning matches specification.
+
+## How it works
+
+First of all, you’ll need to create a new Container Engine cluster on https://cloud.google.com/[Google Cloud]. If you
+don’t have Google Cloud account you’ll have to register one, and will need to enable the Google Compute API. There
+is also an option to run the network on a custom Kubernetes cluster, but that’s out of the scope of default scripts;
+you’ll have to modify them for a non-Google project.
+
+image::${r 'media/test-ecip1017-gcp.png'}[]
+
+One you’ve set up your Compute Cluster and finished setup, you can deploy the network with `bin/deploy.sh`:
+
+image::${r 'media/test-ecip1017-deploy.png'}[]
+
+## Checking network status
+
+Then, check the status with `bin/status.py`:
+
+image::${r 'media/test-ecip1017-status.png'}[]
+
+As you can see here, the blockchain is working as expected, we’re in the second era already, and there is no fork. Woohoo!
+
+In fact, finding a fork sometime is normal, because we’re emulating the nature of the network. Mining nodes can start
+following alternate forks, competing for total difficulty and longest chain. Like this:
+
+image::${r 'media/test-ecip1017-status_fork.png'}[]
+
+You might want to kill one of the miners, so it will restart with following another branch. In this way, you can
+actually play with the network, restart parts of it, or even setup your own network topology if you’re familiar
+with Kubernetes.
+
+## Verify state
+
+What we want to see and demonstrate is that both Geth and Parity are able to follow the same chain after the expected
+monetary policy reward reduction. We also want to verify that all participants of our ECIP-1017 enabled blockchain
+determine the correct state and amounts of earned rewards. To that end, we made `verify.py` script, which downloads
+the whole blockchain in question to a local computer (be patient, it can take some time ;) and finally verify each
+block for correctness.
+
+image::${r 'media/test-ecip1017-verify.png'}[]
+
+In addition to testing compatibility of Geth, Parity and other clients, you can use it to emulate an Ethereum
+application under different conditions, so feel free to modify this sample network for your needs
+
+## References
+
+ - Testing tool code - https://github.com/ethereumproject/ecip1017test
+ - ECIP-1017 - https://github.com/ethereumproject/ECIPs/blob/master/ECIPs/ECIP-1017.md
+ - Geth 4.0.0 - https://github.com/ethereumproject/go-ethereum/releases/tag/v4.0.0
+ - ECIP-1017 Countdown - http://ecip1017.com/

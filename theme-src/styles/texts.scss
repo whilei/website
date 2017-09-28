@@ -15,4 +15,20 @@
   li {
     text-align: justify;
   }
+
+  .imageblock .content {
+    text-align: center;
+    padding: 20px 0;
+    img {
+      max-width: 800px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    img {
+      max-width: 90%;
+    }
+  }
 }

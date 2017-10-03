@@ -30,7 +30,7 @@ $(document).ready(() => {
     $('.donation').each( (i, d) => {
         const el = $(d);
         const addr = el.data('address');
-        console.log('d', addr);
+        // console.log('d', addr);
         const qr = QRCode.generateHTML(addr);
         $('p.qr', el).append(qr);
     })

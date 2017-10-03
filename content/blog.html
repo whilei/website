@@ -15,7 +15,7 @@ published: true
             .reverse()
             .each { post ->
             %>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
                 <p>${post.description}</p>
             </div>
@@ -34,7 +34,7 @@ published: true
             .take(10)
             .each { post ->
             %>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
                 <p>${post.description}</p>
             </div>

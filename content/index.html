@@ -5,7 +5,7 @@ published: true
 features: banner
 ---
 
-<section id='team'>
+<section id="team">
     <div class="container">
     <div class="row">
         <h1 class="heading">Meet Our Team</h1>
@@ -18,7 +18,6 @@ features: banner
 
         <%
         def team = [
-            [name: "Igor Artamonov", twitter: "splix", github: "splix", nick: "splix", role: "Team CTO"],
             [name: "Wei Tang", github: "sorpaas", nick: "sorpaas", role: "Rust Developer"],
             [name: "Constantine Kryvomaz", github: "r8d8", nick: "bunda", role: "Rust Developer"],
             [name: "Isaac Ardis", twitter: "isaacardis", github: "whilei", nick: "ia", role: "Go Developer"],
@@ -28,7 +27,7 @@ features: banner
         Collections.shuffle(team);
         team.each { m ->
         %>
-        <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member inviewport animated delay1" data-effect="fadeInUp">
+        <div class="col-lg-3 col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 member">
             <div class="pic">
                 <img alt="member-image" class="img-responsive" src="${r 'media/' + m.nick + '.jpg'}">
                 <div class="social">
@@ -60,12 +59,13 @@ features: banner
             [name: "Cody Burns", twitter: "DontPanicBurns", nick: "dontpanicburns", role: "Advisor", photo: "dontpanicburns"],
             [name: "Yates Randall", twitter: "ether_ninja", nick: "etherninja", role: "Advisor", photo: "etherninja"],
             [name: "Matthew Mazur", twitter: "snaproII", nick: "snaproll", role: "Advisor", photo: "snaproll"],
+            [name: "Igor Artamonov", twitter: "splix", github: "splix", nick: "splix", role: "Advisor", photo: "splix"],
             ];
             Collections.shuffle(extra);
 
             extra.each { m ->
             %>
-            <div class="col-md-3 col-sm-4 col-xs-6 member inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-md-3 col-sm-4 col-xs-6 member">
                 <div class="pic">
                     <img alt="member-image" class="img-responsive" src="${r 'media/' + m.photo + '.jpg'}">
                     <div class="social">
@@ -99,7 +99,7 @@ features: banner
 
         <div class="row">
         <div class="features">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature">
                 <div class="icon">
                     <i class="mdi mdi-amplifier"></i>
                 </div>
@@ -108,7 +108,7 @@ features: banner
                     <p>Fork of original EF Geth, which is a reference implementation of Ethereum Classic protocol now</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature">
                 <div class="icon">
                     <i class="mdi mdi-briefcase-check"></i>
                 </div>
@@ -119,7 +119,7 @@ features: banner
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature">
                 <div class="icon">
                     <i class="mdi mdi-bank"></i>
                 </div>
@@ -131,7 +131,7 @@ features: banner
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 feature">
                 <div class="icon">
                     <i class="mdi mdi-cube-send"></i>
                 </div>
@@ -162,7 +162,7 @@ features: banner
                 .reverse()
                 .each { post ->
             %>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
                 <p>${post.description}</p>
             </div>
@@ -181,7 +181,7 @@ features: banner
             .take(3)
             .each { post ->
             %>
-            <div class="col-xs-12 col-sm-10 col-sm-offset-1 inviewport animated delay1" data-effect="fadeInUp">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                 <h4><a href="${post.url}">${post.title}</a> <small>${post.date.format('dd MMM yyyy')}</small></h4>
                 <p>${post.description}</p>
             </div>

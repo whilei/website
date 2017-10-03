@@ -31,7 +31,6 @@
     "url-loader": "0.5.6",
     "webpack": "1.12.6",
     "webpack-directory-name-as-main": "1.0.0",
-
     "jquery": "2.1.4",
     "bootstrap": "3.3.5",
     "animate.css": "3.5.2",
@@ -46,7 +45,6 @@
     "get-style-property": "0.1.1",
     "EventEmitter": "1.0.0",
     "qrjs": "0.1.2"
-
   },
   "engines": {
     "node": "0.12",

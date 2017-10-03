@@ -4,9 +4,9 @@
  * This file is part of Caliber - Multi Purpose HTML package.
  */
 
-import jQuery from 'jquery';
+import $ from 'jquery';
 
-jQuery(function($) {
+$(document).ready(function() {
 
     'use strict';
 
@@ -124,7 +124,7 @@ jQuery(function($) {
 
         }
 
-    }
+    };
 
     /*--------------------------------
      Image Carousel (Made for you Section)
@@ -149,7 +149,7 @@ jQuery(function($) {
 
         }
 
-    }
+    };
 
     /*--------------------------------
      Slider Header Carousel
@@ -175,28 +175,32 @@ jQuery(function($) {
 
         }
 
-    }
+    };
 
     /*--------------------------------
      Slider Header Carousel
      --------------------------------*/
 
-    CALIBER_SETTINGS.inViewPortAnimation = function() {
-
-        if ($.isFunction($.fn.viewportChecker)) {
-
-            $('.inviewport').addClass("hiddenthis").viewportChecker({
-                classToAdd: 'visiblethis',
-                offset: 0,
-                callbackFunction: function(elem) {
-                    var effect = $(elem).attr("data-effect");
-                    $(elem).addClass(effect);
-                }
-            });
-
-        }
-
-    }
+    // CALIBER_SETTINGS.inViewPortAnimation = function() {
+    //     console.log('inviewport', $.isFunction($.fn.viewportChecker), $('.inviewport'));
+    //     if ($.isFunction($.fn.viewportChecker)) {
+    //
+    //         $('.inviewport').each((i, elem) => {
+    //             console.log('add to', i, $(elem));
+    //             $(elem).addClass("hiddenthis");
+    //             $(elem).viewportChecker({
+    //                 classToAdd: 'visiblethis animated fadeInDown',
+    //                 offset: 0,
+    //                 callbackFunction: function(elem) {
+    //                     console.log('inview', i, elem, $(elem).attr("data-effect"));
+    //                     $(elem).removeClass("hiddenthis");
+    //                     var effect = $(elem).attr("data-effect");
+    //                     $(elem).addClass(effect);
+    //                 }
+    //             })
+    //         });
+    //     }
+    // };
 
 
 
@@ -453,7 +457,7 @@ jQuery(function($) {
         CALIBER_SETTINGS.twitterCarousel();
         CALIBER_SETTINGS.imageCarousel();
         CALIBER_SETTINGS.headerSliderCarousel();
-        CALIBER_SETTINGS.inViewPortAnimation();
+        // CALIBER_SETTINGS.inViewPortAnimation();
         CALIBER_SETTINGS.mobileMenu();
         CALIBER_SETTINGS.validateContactForm();
         CALIBER_SETTINGS.sendMessageAJAX();

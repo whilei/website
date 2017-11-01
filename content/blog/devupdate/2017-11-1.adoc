@@ -1,0 +1,86 @@
+---
+layout: article
+title: Development Upate: 01 Nov, 2017
+published: true
+date: 01.11.2017 09:00
+---
+
+=== Meta
+
+Long time no see! We should apologize for the nearly 7 weeks it's been since
+our last dev update; this month we've reorganized, delegated, disputed, considered,
+confided, reconsidered... (no, it wasn't really that hard ;) and have settled
+on scheduling dev updates for the first of each month, to be written (at least mostly)
+by Isaac, yours truly :) Thanks for your patience.
+
+=== The team
+
+We're thrilled to welcome _three_ (count 'em, three!) new developers to the team.
+
+In September https://github.com/sudachen[Alexey] joined us as a Go developer and security specialist, having
+worked most recently with Kasperky Lab as a principal engineer. Hailing from Chile,
+with a big laugh and smile, Alexey dove right in to a major reengineering project around
+geth's EVM interface... changes which will likely make their debut early next year.
+
+The first of the two joining us this month of October is https://github.com/tzdybal[Tomasz]. From Poland,
+Tomasz has (also! woohooo!) joined the ranks as a Go developer, with a strong background in
+database infrastructure and distributed systems. His initial work with the team
+has centered around improving geth's database robustness and stability. He rarely
+says more than is necessary and asks a lot of questions, and I like this about him.
+
+Finally, and last but not least, we're glad to welcome https://github.com/shanejonas[Shane] to the Javascript
+side of things. Shane lives on a small island in Canada. I've been trying to think of a tasteful, yet snarky,
+little jib jab to throw in about his being Canadian, but I can't... it just wouldn't
+be polite ;) He comes from years spent in mobile JS and game development (among other things), and has already
+begun to take big bites on Emerald Wallet.
+
+And as always -- and I'm going to say this everytime... brace yourself :) --
+we are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions. I'm not going to embarass
+myself by listing too few deserving names. Thank _you all_.
+
+
+=== The projects
+
+==== Geth
+
+- Release https://github.com/ethereumproject/go-ethereum/releases/latest[Geth 4.1.0], including a new machine-logging feature https://github.com/ethereumproject/go-ethereum/wiki/mlog-API[`mlog`]
+  to enable log analysis for programs like Kibana, an improved `dump` feature, a new command `api` to
+  simplify RPC calls for scripting, on-the-fly verbosity adjustments for the JS console, and
+  a set of features and refactorings to improve database error handling and
+  recoverability. As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
+
+
+==== SputnikVM
+
+- Release https://github.com/ethereumproject/sputnikvm/releases[SputnikVM 0.7.8],
+  which includes support for `no_std`, allowing Sputnik to run on embedded devices.
+  To learn more, check out @sorpaas's blog post https://that.world/~classic/2017/10/17/sputnikvm-rux/[SputnikVM, the Rux Microkernel, and Embedded Devices], where
+  he steps through the reasoning and implementing of a such a strange and beautiful beast.
+- Created https://github.com/ethereumproject/sputnikvm-dev-web/releases[SputnikVM-Dev-Web], a web interface
+  for the existing (and also with a new release) https://github.com/ethereumproject/sputnikvm-dev/releases[SputnikVM-Dev] development tool.
+
+
+==== Emerald Wallet
+
+- A https://github.com/ethereumproject/emerald-wallet/releases[Beta 3 0.6.0] Release includes
+  ERC20 token support, account hiding, and a remote Morden endpoint, among a few
+  other bug fixes around Ledger support, and refactorings to https://github.com/ethereumproject/emerald-js[emerald-js].
+
+
+==== Emerald Vault + CLI
+
+- Emerald Vault got one new release https://github.com/ethereumproject/emerald-vault/releases[0.13.0], adding
+  support for contract storage (as well as a few minor bug fixes), and it's CLI wrapper https://github.com/ethereumproject/emerald-cli/releases[Emerald CLI]
+  got _two_ new releases, adding a `balance` command, verbosities for server logging, and, as always ;)
+  fixing bugs related to hardware support, Windows, and smoother integration with Wallet.
+
+
+----
+
+_Again_, thank you for your patience. Until next month.
+
+Isaac
+https://github.com/whilei[Github: @whilei]
+Slack: @ia
+

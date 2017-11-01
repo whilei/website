@@ -31,7 +31,7 @@ says more than is necessary and asks a lot of questions, and I like this about h
 Finally, and last but not least, we're glad to welcome https://github.com/shanejonas[Shane] to the Javascript
 side of things. Shane lives on a small island in Canada. I've been trying to think of a tasteful, yet snarky,
 little jib jab to throw in about his being Canadian, but I can't... it just wouldn't
-be polite ;) He comes from years spent in mobile JS and game development (among other things), and already
+be polite ;) He comes from years spent in mobile JS and game development (among other things), and has already
 begun to take big bites on Emerald Wallet.
 
 And as always -- and I'm going to say this everytime... brace yourself :) --

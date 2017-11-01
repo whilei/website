@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Development Upate: 01 Nov, 2017
+title: November 1st Dev Update
 published: true
 date: 01.11.2017 09:00
 ---
@@ -63,7 +63,7 @@ myself by listing too few deserving names. Thank _you all_.
 
 ==== Emerald Wallet
 
-- A https://github.com/ethereumproject/emerald-wallet/releases[Beta 3 0.6.0] Release includes
+- A https://github.com/ethereumproject/emerald-wallet/releases[v0.6.0 Beta 3] Release includes
   ERC20 token support, account hiding, and a remote Morden endpoint, among a few
   other bug fixes around Ledger support, and refactorings to https://github.com/ethereumproject/emerald-js[emerald-js].
 
@@ -76,11 +76,9 @@ myself by listing too few deserving names. Thank _you all_.
   fixing bugs related to hardware support, Windows, and smoother integration with Wallet.
 
 
-----
+---
 
 _Again_, thank you for your patience. Until next month.
 
-Isaac
-https://github.com/whilei[Github: @whilei]
-Slack: @ia
+Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
 

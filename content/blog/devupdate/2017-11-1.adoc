@@ -30,11 +30,11 @@ says more than is necessary and asks a lot of questions, and I like this about h
 
 Finally, and last but not least, we're glad to welcome https://github.com/shanejonas[Shane] to the Javascript
 side of things. Shane lives on a small island in Canada. I've been trying to think of a tasteful, yet snarky,
-little jib jab to throw in about his being Canadian, but I can't. It just wouldn't
-be polite. He comes from years spent in mobile JS and game development (among other things), and already
+little jib jab to throw in about his being Canadian, but I can't... it just wouldn't
+be polite ;) He comes from years spent in mobile JS and game development (among other things), and already
 begun to take big bites on Emerald Wallet.
 
-And as always -- and I'm going to say this everytime... brace yourself ;) --
+And as always -- and I'm going to say this everytime... brace yourself :) --
 we are extremely grateful to *the many volunteers and members of our community* for
 so many creative, thoughtful, and ongoing contributions. I'm not going to embarass
 myself by listing too few deserving names. Thank _you all_.
@@ -75,4 +75,12 @@ myself by listing too few deserving names. Thank _you all_.
   got _two_ new releases, adding a `balance` command, verbosities for server logging, and, as always ;)
   fixing bugs related to hardware support, Windows, and smoother integration with Wallet.
 
+
+----
+
+_Again_, thank you for your patience. Until next month.
+
+Isaac
+https://github.com/whilei[Github: @whilei]
+Slack: @ia
 

@@ -44,11 +44,12 @@ myself by listing too few deserving names. Thank _you all_.
 
 ==== Geth
 
-- Release https://github.com/ethereumproject/go-ethereum/releases/latest[Geth 4.1.0], including a new machine-logging feature https://github.com/ethereumproject/go-ethereum/wiki/mlog-API[`mlog`]
+- Release https://github.com/ethereumproject/go-ethereum/releases/latest[Geth 4.1.0], including a set of
+  features, fixes, and refactorings to improve client stability and data recoverability,
+  a new machine-logging feature https://github.com/ethereumproject/go-ethereum/wiki/mlog-API[`mlog`]
   to enable log analysis for programs like Kibana, an improved `dump` feature, a new command `api` to
-  simplify RPC calls for scripting, on-the-fly verbosity adjustments for the JS console, and
-  a set of features and refactorings to improve database error handling and
-  recoverability. As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
+  simplify RPC calls for scripting, and on-the-fly verbosity adjustments for the JS console.
+  As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
 
 
 ==== SputnikVM

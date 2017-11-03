@@ -1,8 +1,8 @@
 ---
 layout: article
-title: November 1st Dev Update
+title: November 3rd Dev Update
 published: true
-date: 01.11.2017 09:00
+date: 03.11.2017 09:00
 ---
 
 

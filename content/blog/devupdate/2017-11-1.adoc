@@ -5,13 +5,6 @@ published: true
 date: 01.11.2017 09:00
 ---
 
-=== Meta
-
-Long time no see! We should apologize for the nearly 7 weeks it's been since
-our last dev update; this month we've reorganized, delegated, disputed, considered,
-confided, reconsidered... (no, it wasn't really that hard ;) and have settled
-on scheduling dev updates for the first of each month, to be written (at least mostly)
-by Isaac, yours truly :) Thanks for your patience.
 
 === The team
 
@@ -44,11 +37,12 @@ myself by listing too few deserving names. Thank _you all_.
 
 ==== Geth
 
-- Release https://github.com/ethereumproject/go-ethereum/releases/latest[Geth 4.1.0], including a new machine-logging feature https://github.com/ethereumproject/go-ethereum/wiki/mlog-API[`mlog`]
+- Release https://github.com/ethereumproject/go-ethereum/releases/latest[Geth 4.1.0], including a set of
+  features, fixes, and refactorings to improve client stability and data recoverability,
+  a new machine-logging feature https://github.com/ethereumproject/go-ethereum/wiki/mlog-API[`mlog`]
   to enable log analysis for programs like Kibana, an improved `dump` feature, a new command `api` to
-  simplify RPC calls for scripting, on-the-fly verbosity adjustments for the JS console, and
-  a set of features and refactorings to improve database error handling and
-  recoverability. As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
+  simplify RPC calls for scripting, and on-the-fly verbosity adjustments for the JS console.
+  As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
 
 
 ==== SputnikVM
@@ -78,7 +72,7 @@ myself by listing too few deserving names. Thank _you all_.
 
 ---
 
-_Again_, thank you for your patience. Until next month.
+Until next month,
 
 Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
 

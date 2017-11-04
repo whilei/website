@@ -10,8 +10,7 @@ date: 03.11.2017 09:00
 
 We're thrilled to welcome _three_ (count 'em, three!) new developers to the team.
 
-In September https://github.com/sudachen[Alexey] joined us as a Go developer and security specialist, having
-worked most recently with Kasperky Lab as a principal engineer. Hailing from Chile,
+In September https://github.com/sudachen[Alexey] joined us as a Go developer and security specialist. Hailing from Chile,
 with a big laugh and smile, Alexey dove right in to a major reengineering project around
 geth's EVM interface... changes which will likely make their debut early next year.
 

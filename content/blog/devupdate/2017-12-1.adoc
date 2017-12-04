@@ -1,0 +1,88 @@
+---
+layout: article
+title: December 1st Dev Update
+published: true
+date: 01.12.2017 09:00
+---
+
+TODO:
+- Hong Kong
+- @superfreek's truffle box
+- Wei's sepk256abc-klmn1(?)
+-
+
+Hello world,
+
+Jet lag is almost a wonderful thing. I haven't slept past 2am since getting back home,
+am reckoning with unquenchable cravings for unpronounceable seafood, and... *falls asleep.
+
+Several of us were able to meet face-to-face for the first time _ever_ in Hong Kong
+at the _also-first-ever_ and definitely-hopefully-first-annual ETC Summit! A big
+thank you to the event organizers _and_ to so many wonderful participants from
+near and far who made it such a diverse, energetic, and welcoming space. Please note
+that recordings of the entire (I think?) summit's presentations can be found
+https://www.youtube.com/channel/UCoiplpzdCjbUvrvXFfMhkoA/videos[here on youtube].
+
+---
+
+Here are the usual relevant links for the usual relevant projects' latest releases.
+
+Far far away in the land of Go there have been several notable developments: head
+sync tracking saw an improvement with a fix to peer TD calculation (this should fix
+some issues around a "stalling" issue several users have reported); logging is in the
+middle-end of a significant refactor and redesign; look for a minor version release
+sometime this week! Until then, feel free to jump in with 4.1.2 if the stalling
+issue has been bothering you.
+
+Head south from there, take your first left, then 4 more lefts, then follow the river for
+4 and a half dozen paces and you'll find yourself nearing the Mneumonic Forest.
+The brave will be likely to encounter a Release Candidate 1 for Emerald Wallet.
+While this create is certainly no longer a juvenile, like all beasts of the forest,
+it must use wits, cunning, and sheer determination to
+
+
+----
+
+=== The projects
+
+==== Geth
+
+- Release 4.1.1 and https://github.com/ethereumproject/go-ethereum/releases/latest[4.2.0], including. As usual, change specifics can be found in https://github.com/ethereumproject/go-ethereum/blob/changelog/CHANGELOG.md[the changelog].
+
+
+==== SputnikVM
+
+- Release https://github.com/ethereumproject/sputnikvm/releases[SputnikVM 0.7.8],
+  which includes support for `no_std`, allowing Sputnik to run on embedded devices.
+  To learn more, check out @sorpaas's blog post https://that.world/~classic/2017/10/17/sputnikvm-rux/[SputnikVM, the Rux Microkernel, and Embedded Devices], where
+  he steps through the reasoning and implementing of a such a strange and beautiful beast.
+- Created https://github.com/ethereumproject/sputnikvm-dev-web/releases[SputnikVM-Dev-Web], a web interface
+  for the existing (and also with a new release) https://github.com/ethereumproject/sputnikvm-dev/releases[SputnikVM-Dev] development tool.
+
+
+==== Emerald Wallet
+
+- A https://github.com/ethereumproject/emerald-wallet/releases[v0.6.0 Beta 3] Release includes
+  ERC20 token support, account hiding, and a remote Morden endpoint, among a few
+  other bug fixes around Ledger support, and refactorings to https://github.com/ethereumproject/emerald-js[emerald-js].
+
+
+==== Emerald Vault + CLI
+
+- Emerald Vault got one new release https://github.com/ethereumproject/emerald-vault/releases[0.13.0], adding
+  support for contract storage (as well as a few minor bug fixes), and it's CLI wrapper https://github.com/ethereumproject/emerald-cli/releases[Emerald CLI]
+  got _two_ new releases, adding a `balance` command, verbosities for server logging, and, as always ;)
+  fixing bugs related to hardware support, Windows, and smoother integration with Wallet.
+
+---
+
+We are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions. I'm not going to embarass
+myself by listing too few deserving names. Thank _you all_.
+
+---
+
+Until next month,
+
+Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
+

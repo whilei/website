@@ -9,7 +9,7 @@ date: 04.12.2017 09:00
 
 Several of us from the team and many from the community were able to meet face-to-face for the first time _ever_ in Hong Kong at the _also-first-ever_ and definitely-hopefully-first-_annual_ ETC Summit! A big thank you to the event organizers _and_ to so many wonderful participants from
 near and far who made it such a diverse, energetic, and welcoming space. Please note
-that recordings of the entire (I think?) summit's presentations can be found
+that recordings of the entire summit's presentations can be found
 https://www.youtube.com/channel/UCoiplpzdCjbUvrvXFfMhkoA/videos[here, on youtube].
 
 image::images/temple.jpg[temple,600,400,role="center"]
@@ -21,15 +21,13 @@ so many creative, thoughtful, and ongoing contributions to our core projects and
 
 === projects
 
-**emerald-wallet** will release their first https://github.com/ethereumproject/emerald-wallet/releases/latest[_Release Candidate_ (RC1)] today, including support for BIP39 mnemonic phrase retrieval, connection with Shapeshift, improved loading and notification UI, a landing page, and a big refactoring for style and linting. Supporting the wallet's backend, **emerald-cli** released https://github.com/ethereumproject/emerald-cli/releases/latest[v0.18.0] also with support for BIP39 via JSON-RPC and a few minor bug fixes, and **emerald-rs (Vault)** released v0.17.0 and https://github.com/ethereumproject/emerald-rs/releases/latest[v0.18.0] with support for BIP39 mnemonics and BIP32 key derivation. Finally, if you're a React dev, DAPP dev, or chocolate enthusiast, check out https://github.com/shanejonas/react-box-web3-todo[@shanejonas's React TODO Truffle Box], which can quickly put you within throwing distance of your next most ambitious DAPP project.
+**emerald-wallet** now includes support for BIP39 mnemonic phrase retrieval, connection with Shapeshift, improved loading and notification UI, a landing page, and a big refactoring for style and linting. Supporting the wallet's backend, **emerald-cli** released https://github.com/ethereumproject/emerald-cli/releases/latest[v0.18.0] also with support for BIP39 via JSON-RPC and a few minor bug fixes, and **emerald-rs (Vault)** released v0.17.0 and https://github.com/ethereumproject/emerald-rs/releases/latest[v0.18.0] with support for BIP39 mnemonics and BIP32 key derivation.
 
 **go-ethereum** got an important improvement with a fix for peer total difficulty
 calculation, which should fix an issue around a "stalling" issue several users have
-reported. We're currently nearing the end of a major refactor/redesign of logging,
-and are aiming for a release this week. Until then, feel free to jump in early with
-the head tracking fix at https://github.com/ethereumproject/go-ethereum/releases/tag/v4.1.2[prerelease v4.1.2] if the stalling issue has been bothering you. In other news, @whilei and @shanejonas made some experiments in log analysis with geth's forthcoming `mlog` API and Elastic's ELK stack. You can find a walkthrough, configs, and some pretty pictures for that at https://github.com/whilei/geth-ELK[whilei/geth-ELK].
+reported. Feel free to jump in early with the head tracking fix at https://github.com/ethereumproject/go-ethereum/releases/tag/v4.1.2[prerelease v4.1.2] if the stalling issue has been bothering you. In other news, we made some experiments in log analysis with geth's experimental `mlog` API and Elastic's ELK stack. You can find a walkthrough, configs, and some pretty pictures for that at https://github.com/ethereumproject/geth-ELK[ethereumproject/geth-ELK].
 
-**sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[the new pure-rust implementation of secp256k1], replacing the previously used C library. @sorpaas has also been running a(nother) complete regression test on SputnikVM's latest performance enhancements; if you like excitement and entertainment, you can tune in to the livestream of it's progress here: https://seashells.io/v/9Pn7ANmH. Also in full swing is development on integrating SputnikVM with geth, yielding so far among other things, https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
+**sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[a pure-rust implementation of secp256k1], replacing the previously used C library. Also in full swing is development on integrating SputnikVM with geth, yielding https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
 
 === protocols
 
@@ -56,9 +54,8 @@ Core projects:
 
 Extracurriculars:
 
-- https://github.com/whilei/geth-ELK[@whilei's adventure into geth log analysis with the ELK stack]
-- https://github.com/shanejonas/react-box-web3-todo[@shanejonas's React-Todo DAPP Truffle Box]
-- https://github.com/ethereumproject/libsecp256k1-rs[@sorpaas's Rust implementation of secp256k1]
+- https://github.com/ethereumproject/geth-ELK[@whilei's adventure into geth log analysis with the ELK stack]
+- https://github.com/ethereumproject/libsecp256k1-rs[Pure Rust implementation of secp256k1]
 
 ECIP PRs:
 

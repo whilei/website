@@ -5,18 +5,21 @@ published: true
 date: 04.12.2017 09:00
 ---
 
-=== the team
+=== community
 
-Several of us were able to meet face-to-face for the first time _ever_ in Hong Kong
-at the _also-first-ever_ and definitely-hopefully-first-_annual_ ETC Summit! A big
-thank you to the event organizers _and_ to so many wonderful participants from
+Several of us from the team and many from the community were able to meet face-to-face for the first time _ever_ in Hong Kong at the _also-first-ever_ and definitely-hopefully-first-_annual_ ETC Summit! A big thank you to the event organizers _and_ to so many wonderful participants from
 near and far who made it such a diverse, energetic, and welcoming space. Please note
 that recordings of the entire (I think?) summit's presentations can be found
 https://www.youtube.com/channel/UCoiplpzdCjbUvrvXFfMhkoA/videos[here, on youtube].
 
 image::images/temple.jpg[temple,600,400,role="center"]
 
-=== the projects
+We are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions to our core projects and others.
+
+*For example*, in reponse to https://github.com/ethereumproject/explorer/issues/67[etherhub.io being down], https://github.com/kimisan[@kimisan] has offered to contribute his resources and attention to prepare a standby site and maintain it! Thank you, @kimisan, and thank _you all_.
+
+=== projects
 
 **emerald-wallet** will release their first https://github.com/ethereumproject/emerald-wallet/releases/latest[_Release Candidate_ (RC1)] today, including support for BIP39 mnemonic phrase retrieval, connection with Shapeshift, improved loading and notification UI, a landing page, and a big refactoring for style and linting. Supporting the wallet's backend, **emerald-cli** released https://github.com/ethereumproject/emerald-cli/releases/latest[v0.18.0] also with support for BIP39 via JSON-RPC and a few minor bug fixes, and **emerald-rs (Vault)** released v0.17.0 and https://github.com/ethereumproject/emerald-rs/releases/latest[v0.18.0] with support for BIP39 mnemonics and BIP32 key derivation. Finally, if you're a React dev, DAPP dev, or chocolate enthusiast, check out https://github.com/shanejonas/react-box-web3-todo[@shanejonas's React TODO Truffle Box], which can quickly put you within throwing distance of your next most ambitious DAPP project.
 
@@ -28,17 +31,12 @@ the head tracking fix at https://github.com/ethereumproject/go-ethereum/releases
 
 **sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[the new pure-rust implementation of secp256k1], replacing the previously used C library. @sorpaas has also been running a(nother) complete regression test on SputnikVM's latest performance enhancements; if you like excitement and entertainment, you can tune in to the livestream of it's progress here: https://seashells.io/v/9Pn7ANmH. Also in full swing is development on integrating SputnikVM with geth, yielding so far among other things, https://github.com/ethereumproject/sputnikvm-libffi[sputnikvm-libffi] and https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
 
-=== the protocols
+=== protocols
 
 **ECIP-1039** has been merged to specify detailed rounding specifications for the ECIP-1017 Monetary Policy. Otherwise of note is **ECIP-1037**, which, if merged, would establish specifications for the permanent difficulty bomb diffusal at block 5452163 (around January or February); if you'd like to be involved in Ethereum Classic protocol policy, please feel welcome to add your thoughts and questions there.
 
-=== the community
 
-We are extremely grateful to *the many volunteers and members of our community* for
-so many creative, thoughtful, and ongoing contributions.
-
-*For example*, in reponse to https://github.com/ethereumproject/explorer/issues/67[etherhub.io being down], https://github.com/kimisan[@kimisan] has offered to contribute his resources and attention to prepare a standby site and maintain it! Thank you, @kimisan, and thank _you all_.
-
+---
 
 > Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
 

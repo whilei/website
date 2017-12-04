@@ -29,7 +29,7 @@ reported. We're currently nearing the end of a major refactor/redesign of loggin
 and are aiming for a release this week. Until then, feel free to jump in early with
 the head tracking fix at https://github.com/ethereumproject/go-ethereum/releases/tag/v4.1.2[prerelease v4.1.2] if the stalling issue has been bothering you. In other news, @whilei and @shanejonas made some experiments in log analysis with geth's forthcoming `mlog` API and Elastic's ELK stack. You can find a walkthrough, configs, and some pretty pictures for that at https://github.com/whilei/geth-ELK[whilei/geth-ELK].
 
-**sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[the new pure-rust implementation of secp256k1], replacing the previously used C library. @sorpaas has also been running a(nother) complete regression test on SputnikVM's latest performance enhancements; if you like excitement and entertainment, you can tune in to the livestream of it's progress here: https://seashells.io/v/9Pn7ANmH. Also in full swing is development on integrating SputnikVM with geth, yielding so far among other things, https://github.com/ethereumproject/sputnikvm-libffi[sputnikvm-libffi] and https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
+**sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[the new pure-rust implementation of secp256k1], replacing the previously used C library. @sorpaas has also been running a(nother) complete regression test on SputnikVM's latest performance enhancements; if you like excitement and entertainment, you can tune in to the livestream of it's progress here: https://seashells.io/v/9Pn7ANmH. Also in full swing is development on integrating SputnikVM with geth, yielding so far among other things, https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
 
 === protocols
 
@@ -51,7 +51,6 @@ Core projects:
 * Emerald CLI: https://github.com/ethereumproject/emerald-cli
 * Emerald Vault: https://github.com/ethereumproject/emerald-rs
 * SputnikVM: https://github.com/ethereumproject/sputnikvm
-** FFI library: https://github.com/ethereumproject/sputnikvm-libffi
 ** FFI bindings: https://github.com/ethereumproject/sputnikvm-ffi
 
 

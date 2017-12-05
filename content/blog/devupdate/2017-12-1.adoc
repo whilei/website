@@ -17,8 +17,6 @@ image::images/temple.jpg[temple,600,400,role="center"]
 We are extremely grateful to *the many volunteers and members of our community* for
 so many creative, thoughtful, and ongoing contributions to our core projects and others.
 
-*For example*, in reponse to https://github.com/ethereumproject/explorer/issues/67[etherhub.io being down], https://github.com/kimisan[@kimisan] has offered to contribute his resources and attention to prepare a standby site and maintain it! Thank you, @kimisan, and thank _you all_.
-
 === projects
 
 **emerald-wallet** now includes support for BIP39 mnemonic phrase retrieval, connection with Shapeshift, improved loading and notification UI, a landing page, and a big refactoring for style and linting. Supporting the wallet's backend, **emerald-cli** released https://github.com/ethereumproject/emerald-cli/releases/latest[v0.18.0] also with support for BIP39 via JSON-RPC and a few minor bug fixes, and **emerald-rs (Vault)** released v0.17.0 and https://github.com/ethereumproject/emerald-rs/releases/latest[v0.18.0] with support for BIP39 mnemonics and BIP32 key derivation.

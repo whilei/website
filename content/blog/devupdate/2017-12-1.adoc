@@ -1,0 +1,62 @@
+---
+layout: article
+title: December Dev Update
+published: true
+date: 04.12.2017 09:00
+---
+
+=== community
+
+Several of us from the team and many from the community were able to meet face-to-face for the first time _ever_ in Hong Kong at the _also-first-ever_ and definitely-hopefully-first-_annual_ ETC Summit! A big thank you to the event organizers _and_ to so many wonderful participants from
+near and far who made it such a diverse, energetic, and welcoming space. Please note
+that recordings of the entire summit's presentations can be found
+https://www.youtube.com/channel/UCoiplpzdCjbUvrvXFfMhkoA/videos[here, on youtube].
+
+image::images/temple.jpg[temple,600,400,role="center"]
+
+We are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions to our core projects and others.
+
+=== projects
+
+**emerald-wallet** now includes support for BIP39 mnemonic phrase retrieval, connection with Shapeshift, improved loading and notification UI, a landing page, and a big refactoring for style and linting. Supporting the wallet's backend, **emerald-cli** released https://github.com/ethereumproject/emerald-cli/releases/latest[v0.18.0] also with support for BIP39 via JSON-RPC and a few minor bug fixes, and **emerald-rs (Vault)** released v0.17.0 and https://github.com/ethereumproject/emerald-rs/releases/latest[v0.18.0] with support for BIP39 mnemonics and BIP32 key derivation.
+
+**go-ethereum** got an important improvement with a fix for peer total difficulty
+calculation, which should fix an issue around a "stalling" issue several users have
+reported. Feel free to jump in early with the head tracking fix at https://github.com/ethereumproject/go-ethereum/releases/tag/v4.1.2[prerelease v4.1.2] if the stalling issue has been bothering you. In other news, we made some experiments in log analysis with geth's experimental `mlog` API and Elastic's ELK stack. You can find a walkthrough, configs, and some pretty pictures for that at https://github.com/ethereumproject/geth-ELK[ethereumproject/geth-ELK].
+
+**sputnikvm** released https://github.com/ethereumproject/sputnikvm[v0.9.0], which adds support for https://github.com/ethereumproject/libsecp256k1-rs[a pure-rust implementation of secp256k1], replacing the previously used C library. Also in full swing is development on integrating SputnikVM with geth, yielding https://github.com/ethereumproject/sputnikvm-ffi[sputnikvm-ffi].
+
+=== protocols
+
+**ECIP-1039** has been merged to specify detailed rounding specifications for the ECIP-1017 Monetary Policy. Otherwise of note is **ECIP-1037**, which, if merged, would establish specifications for the permanent difficulty bomb diffusal at block 5452163 (around January or February); if you'd like to be involved in Ethereum Classic protocol policy, please feel welcome to add your thoughts and questions there.
+
+
+---
+
+> Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
+
+---
+
+==== links
+
+Core projects:
+
+* Geth: https://github.com/ethereumproject/go-ethereum
+* Emerald Wallet: https://github.com/ethereumproject/emerald-wallet
+* Emerald CLI: https://github.com/ethereumproject/emerald-cli
+* Emerald Vault: https://github.com/ethereumproject/emerald-rs
+* SputnikVM: https://github.com/ethereumproject/sputnikvm
+** FFI bindings: https://github.com/ethereumproject/sputnikvm-ffi
+
+
+Extracurriculars:
+
+- https://github.com/ethereumproject/geth-ELK[Geth log analysis with the ELK stack]
+- https://github.com/ethereumproject/libsecp256k1-rs[Pure Rust implementation of secp256k1]
+
+ECIP PRs:
+
+- https://github.com/ethereumproject/ecips/pulls
+
+

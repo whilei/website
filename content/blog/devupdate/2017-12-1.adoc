@@ -54,7 +54,7 @@ Core projects:
 
 Extracurriculars:
 
-- https://github.com/ethereumproject/geth-ELK[@whilei's adventure into geth log analysis with the ELK stack]
+- https://github.com/ethereumproject/geth-ELK[Geth log analysis with the ELK stack]
 - https://github.com/ethereumproject/libsecp256k1-rs[Pure Rust implementation of secp256k1]
 
 ECIP PRs:

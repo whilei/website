@@ -1,0 +1,44 @@
+---
+layout: article
+title: January Dev Update
+published: true
+date: 02.01.2018 09:00
+---
+
+=== projects
+
+https://github.com/ethereumproject/emerald-wallet[**emerald-wallet**] addressed some issues found with RC1, including an initialization error, as well as various UI improvements.
+
+https://github.com/ethereumproject/emerald-cli/releases[**emerald-cli**] released v0.19.0, which fixes an HD path parsing bug.
+
+https://github.com/ethereumproject/emerald-rs/releases[**emerald-rs**] released v0.18.1, including a public `mnemomic` module and a few bug fixes.
+
+Reusable visual components from https://github.com/ethereumproject/emerald-wallet[**emerald-wallet**] have been moved to https://github.com/ethereumproject/emerald-js-ui[**emerald-js-ui**].
+
+https://github.com/ethereumproject/emerald-js[**emerald-js**], a young library of SDK-ish wallet logic, version is now at v0.0.21.
+
+https://github.com/ethereumproject/go-ethereum[**go-ethereum**] released https://github.com/ethereumproject/go-ethereum/releases[v4.2.0], including experimental support for https://github.com/ethereumproject/sputnikvm[SputnikVM], on-filesystem debug logging with automatic and configurable log compression and rotation, a rebuilt, simpler, UI, and support for user-configurable `GOMAXPROCS` environment variable.
+
+https://github.com/ethereumproject/sputnikvm[**sputnikvm**] got some initial performance profiling and refactoring.
+
+https://github.com/ethereumproject/etcommon-rs[**etcommon-rs**] implemented basic pruning and garbage collection support.
+
+=== protocols
+
+https://github.com/ethereumproject/ECIPs/pull/80[**ECIP-1036**] if merged, would establish specifications for the **permanent difficulty bomb diffusal** at block 5452163 (around this month or February); if you'd like to be involved in Ethereum Classic protocol policy, please feel welcome to add your thoughts and questions there.
+
+https://github.com/ethereumproject/ECIPs/pull/81[**ECIP-1037**] proposes a simple, non-interactive URI scheme, which would enable users to easily make payments and interact with smart contracts by simply clicking links on webpages or scanning QR Codes.
+
+https://github.com/ethereumproject/ECIPs/pull/86[**ECIP-1040**] proposes a generalized account versioning scheme for hard forks, by allowing multiple versions of the virtual machines to execute in the same block.
+
+
+---
+
+We are extremely grateful to *the many volunteers and members of our community* for
+so many creative, thoughtful, and ongoing contributions to our core projects and others.
+
+---
+
+> Isaac - https://github.com/whilei[Github: @whilei] - Slack: @ia
+
+

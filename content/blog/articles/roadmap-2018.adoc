@@ -1,0 +1,67 @@
+---
+layout: article
+title: Roadmap for 2018
+published: true
+date: 02.01.2018 09:00
+---
+
+= 2017 Review
+
+Before going to discuss plans for 2018 let’s recall what was done by ETCDEV team during year 2017.
+
+The main accomplishment was that the team was established, that was a very challenging task, with very limited funding,
+under constant pressure from all sides and toxic environment, but by end of the year we grew up to 8 full time
+members in the ETCDEV team. The team got established development processes, working full time on core ETC projects,
+and will continue to grow.
+
+Quick outline of the year:
+
+- _Hardfork at block 3M_ to pause the Difficulty Bomb. While this was done by Igor Artamonov alone, it was during the
+    time of first steps to form a team and he was forming the team and looking for and interviewing first
+    engineers at very same moment. Beginning of February is official time when the development was started with
+    first full time developers
+- ETCDEV made huge refactoring, cleanup and introduced a lot of improvements to Geth codebase, with _more than 1100
+    commits_ for past year and https://github.com/ethereumproject/go-ethereum/releases[8 releases]. Now it’s a
+    flexibility node, supports different types of networks and custom/private blockchains. If you look at the Geth
+    code, you’ll see that about 30% of current codebase is
+    written by ETCDEV developers. That’s a huge change, it’s a new software now. To our surprise some new blockchains
+    started to base
+    their work on top of Classic Geth now, instead of ETH Geth. That probably means ETCDEV in a right path.
+- _Moved to new monetary policy_. That was a big task, included not only modifications to Geth and Parity
+    codebases. Geth code was just a tip of the iceberg, much more work were outside of core code, such as
+    https://github.com/ethereumproject/ecip1017test[testing under different conditions], and making sure that all
+    external software will continue to work under new monetary supply
+- Built a https://github.com/ethereumproject/emerald-wallet[desktop wallet] from scratch, with support of light/remote nodes, hardware wallets, and many other things.
+    Finally ETC got own wallet and is not dependent on 3rd party ones.
+- https://github.com/ethereumproject/emerald-cli[Command line tools to operate blockchain from shell scripts], send
+    and receive coins, sign transactions and many
+    more in lightweight and secure way, which could be integrated into or used together with other server side software
+- Totally https://github.com/ethereumproject/sputnikvm[new EVM for Ethereum projects]. Standalone, embeddable, fast
+    and flexible. It got integrated into Geth as
+    optional EVM and is being tested now. Together with other libraries, such as Emerald Vault, it gives a lot of
+    opportunities to build secure blockchain enabled software for with support of IoT and low powered hardware
+- In addition to IoT we got Javascript libraries to help building 3rd party Dapps on top of Ethereum, and Emerald
+    Wallet is just a first example of such dapps
+- By numbers it’s https://github.com/ethereumproject[16 new projects] (in Github terms) and _more than 5000 total
+    commits_ for year 2017. Or almost 20 commits per working day, counting ETCDEV work alone.
+
+That was a productive year, a lot of stuff was done and more to be done for year 2018
+
+= Plans for 2018
+
+First of all, we’ll continue our team growth, hire more engineers and managers, solidify our processes and we'll
+continue our work.
+
+One of the main focuses will be _scale through sidechains_. That’s big and very challenging task, it’s requires a lot
+of research and experiments. Right now we’re setting up some pilot projects with third party companies, and we’re
+very open for collaboration on this field.
+
+Another topic is _bringing Ethereum Classic to IoT_. We already have significant progress in this direction, you
+already can run whole stack on embeddable hardware, we have separate modules, including lightweight components such
+as Emerald Vault and Emerald CLI, and Sputnik VM, which will allow to build different types of applications. We’re
+going to improve it, find new ways of using it for practical applications and make experiments with partners.
+
+Of course we’re going to continue our work on _Emerald Platform_, going to release Emerald Desktop Wallet, make Mobile
+Wallet and few other Dapps. As well as help other companies to use Emerald Platform in their services.
+
+More detailed roadmap will be publish soon on the website, stay tuned.
